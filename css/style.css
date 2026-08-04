@@ -196,6 +196,8 @@ select {
   font-family: var(--serif);
   font-size: clamp(1.4rem, 2.25vw, 2rem);
   line-height: 1.22;
+    margin-bottom: 30px;
+
 }
 
 .hero-roles {
@@ -223,6 +225,19 @@ select {
 
 .hero-roles p {
   font-size: 0.78rem;
+    margin-top: 36px;
+
+}
+.hero-about {
+  max-width: 760px;
+}
+
+.hero-about p {
+  margin-bottom: 18px;
+}
+
+.hero-about p:last-child {
+  margin-bottom: 0;
 }
 
 .hero-side {
