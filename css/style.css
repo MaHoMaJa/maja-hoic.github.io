@@ -165,7 +165,12 @@ img {
   object-position: center;
   filter: grayscale(100%) contrast(1.05);
 }
-
+.hero-caption {
+  margin-top: 10px;
+  color: var(--grey);
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
 .hero-meta {
   display: grid;
   gap: 20px;
