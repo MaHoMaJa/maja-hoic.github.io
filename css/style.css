@@ -96,9 +96,9 @@ img {
 .hero {
   min-height: calc(100vh - 72px);
   display: grid;
-  grid-template-columns: 90px minmax(0, 1fr) 300px;
-  gap: 35px;
-  padding: 68px 28px 48px;
+  grid-template-columns: 55px minmax(0, 1fr) 320px;
+  gap: 24px;
+  padding: 54px 28px 42px;
   border-bottom: 1px solid var(--black);
 }
 
@@ -114,6 +114,8 @@ img {
 
 .hero-copy {
   align-self: center;
+  max-width: 900px;
+  transform: translateX(-10px);
 }
 
 .kicker {
@@ -147,9 +149,9 @@ img {
 
 .hero-side {
   align-self: center;
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
+  justify-self: end;
+  width: 100%;
+  max-width: 285px;
 }
 
 .hero-image {
