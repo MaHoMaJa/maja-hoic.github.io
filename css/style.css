@@ -41,6 +41,18 @@ a { color: inherit; text-decoration: none; }
   padding: 68px 28px 48px;
   border-bottom: 1px solid var(--black);
 }
+
+.hero-image {
+  width: 320px;
+  margin-bottom: 48px;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+  filter: grayscale(100%) contrast(1.05);
+}
+
 .hero-index, .section-number { font-family: var(--serif); font-size: 1.15rem; }
 .hero-copy { align-self: center; }
 .kicker { font-size: .66rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
