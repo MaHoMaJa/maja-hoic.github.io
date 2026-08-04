@@ -1,229 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Academic Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maja Hoić — science–policy researcher studying policy citations, research impact, open science and scholarly communication infrastructures.">
+  <title>Maja Hoić — Science–Policy Research</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="#home">My Name</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Welcome!</h1>
-                <p class="hero-subtitle">Researcher / Academic Professional</p>
-                <p class="hero-description">Showcasing my work, projects, and expertise</p>
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-            </div>
-        </div>
+  <aside class="sidebar" aria-label="Primary navigation">
+    <div>
+      <a class="brand" href="#home" aria-label="Maja Hoić home">
+        <span class="brand-name">Maja Hoić</span>
+        <span class="brand-role">Science–policy researcher</span>
+      </a>
+
+      <nav class="side-nav">
+        <a href="#about">About</a>
+        <a href="#policy-citations">Policy citations</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects & data</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="https://orcid.org/0000-0002-0398-1858" target="_blank" rel="noopener">ORCID ↗</a>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=58690944800" target="_blank" rel="noopener">Scopus ↗</a>
+      <a href="https://irmo.hr/djelatnici/maja-hoic-2/" target="_blank" rel="noopener">IRMO profile ↗</a>
+    </div>
+  </aside>
+
+  <main class="site-main">
+    <section id="home" class="hero section">
+      <p class="eyebrow">Research · Policy · Infrastructures</p>
+      <h1>Tracing research<br>through policy.</h1>
+      <p class="hero-intro">
+        I study how scholarly research is cited, mentioned and made visible in international and European policy documents.
+      </p>
+      <div class="hero-meta">
+        <span>Zagreb, Croatia</span>
+        <span>Institute for Development and International Relations</span>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Brief Biography</h3>
-                    <p>
-                        I am [YOUR NAME], [YOUR POSITION]. I am passionate about [YOUR AREAS OF INTEREST].
-                        I have experience in developing [YOUR COMPETENCIES] and working with [RELEVANT TOOLS].
-                    </p>
-                    <p>
-                        My academic journey has taken me through [INSTITUTIONS], where I gained knowledge in 
-                        [SPECIFIC FIELDS]. I continue to learn and develop my expertise.
-                    </p>
-                </div>
-                <div class="about-details">
-                    <div class="detail-item">
-                        <h4>Education</h4>
-                        <ul>
-                            <li>PhD, University - Year</li>
-                            <li>Master's Degree, University - Year</li>
-                            <li>Bachelor's Degree, University - Year</li>
-                        </ul>
-                    </div>
-                    <div class="detail-item">
-                        <h4>Skills</h4>
-                        <div class="skills">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Web Development</span>
-                            <span class="skill-tag">Data Science</span>
-                            <span class="skill-tag">Machine Learning</span>
-                            <span class="skill-tag">Research</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cv-section">
-                <a href="cv.pdf" class="btn btn-secondary">
-                    <i class="fas fa-download"></i> Download CV
-                </a>
-            </div>
+    <section id="about" class="section content-section">
+      <div class="section-label">01 — About</div>
+      <div class="section-grid">
+        <h2>Science–policy relations and research impact</h2>
+        <div class="prose">
+          <p>
+            I am a PhD candidate in Information Sciences and a librarian at the Institute for Development and International Relations in Zagreb. My research examines the relationship between science and public policy, with particular attention to how scholarly research is cited, mentioned and used in international and European policy environments.
+          </p>
+          <p>
+            I work with policy-mention and altmetric data to investigate knowledge flows, science diplomacy, open science and the broader societal impact of scientific publications.
+          </p>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Project 1</h3>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">ML</span>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Brief description of your first project. What did you work on, what were the key achievements,
-                        and what technologies did you use.
-                    </p>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Project 2</h3>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Web</span>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Description of your second project. Focus on the problems you solved and the results achieved.
-                    </p>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Project 3</h3>
-                        <div class="project-tags">
-                            <span class="tag">Data Science</span>
-                            <span class="tag">Analysis</span>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Description of your third project. Highlight relevant aspects and the impact of your work.
-                    </p>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div>
-                </div>
-            </div>
+    <section id="policy-citations" class="section content-section accent-section">
+      <div class="section-label">02 — Policy citations</div>
+      <div class="section-grid">
+        <h2>Policy citations as traces of research use</h2>
+        <div class="prose">
+          <p class="lead">
+            Policy mentions offer a way to observe how scientific knowledge enters institutional and public documents.
+          </p>
+          <p>
+            My work treats these mentions not only as impact indicators, but as evidence of the infrastructures, actors and processes through which knowledge becomes visible in policy settings.
+          </p>
         </div>
+      </div>
+
+      <div class="research-panels">
+        <article>
+          <p class="panel-number">A</p>
+          <h3>Questions</h3>
+          <ul>
+            <li>How is research cited and mentioned in policy documents?</li>
+            <li>Which researchers, institutions and countries become visible?</li>
+            <li>How do databases mediate science–policy relations?</li>
+          </ul>
+        </article>
+        <article>
+          <p class="panel-number">B</p>
+          <h3>Data sources</h3>
+          <p>Overton · Altmetric.com · CroRIS · Crossref · Scopus · Zenodo</p>
+        </article>
+        <article>
+          <p class="panel-number">C</p>
+          <h3>Methods</h3>
+          <p>Policy citation analysis · Scientometrics · Altmetrics · Network analysis · Document analysis · Reproducible workflows</p>
+        </article>
+      </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-year">2024</div>
-                    <div class="publication-content">
-                        <h4>Title of Your Publication</h4>
-                        <p class="publication-authors">Author1, Author2, You (2024)</p>
-                        <p class="publication-journal">Journal/Conference, Vol. X, pp. Y-Z</p>
-                        <div class="publication-links">
-                            <a href="#" class="pub-link">PDF</a>
-                            <a href="#" class="pub-link">DOI</a>
-                            <a href="#" class="pub-link">Cite</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-year">2023</div>
-                    <div class="publication-content">
-                        <h4>Second Publication</h4>
-                        <p class="publication-authors">You, Author2 (2023)</p>
-                        <p class="publication-journal">Conference ABC, City</p>
-                        <div class="publication-links">
-                            <a href="#" class="pub-link">PDF</a>
-                            <a href="#" class="pub-link">Citation</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-year">2023</div>
-                    <div class="publication-content">
-                        <h4>Collaborative Research Work</h4>
-                        <p class="publication-authors">Author1, You, Author3 (2023)</p>
-                        <p class="publication-journal">Journal XYZ, Vol. 5, Issue 2</p>
-                        <div class="publication-links">
-                            <a href="#" class="pub-link">PDF</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="research" class="section content-section">
+      <div class="section-label">03 — Featured research</div>
+      <article class="featured-work">
+        <div class="featured-kicker">Quantitative Science Studies · 2026</div>
+        <h2>Small research ecosystems in large international public policies</h2>
+        <p class="featured-subtitle">Tracing an infrastructurally mediated pathway from CroRIS to Overton</p>
+        <p class="featured-authors">Ljerka Luić · Maja Hoić</p>
+        <a class="text-link" href="https://doi.org/10.1162/QSS.a.498" target="_blank" rel="noopener">Read the article ↗</a>
+      </article>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <p>Interested in collaboration? Feel free to reach out:</p>
-                <div class="contact-info">
-                    <a href="mailto:your.email@example.com" class="contact-link">
-                        <i class="fas fa-envelope"></i>
-                        your.email@example.com
-                    </a>
-                    <a href="https://linkedin.com/in/yourprofile" class="contact-link">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn Profile
-                    </a>
-                    <a href="https://github.com/yourusername" class="contact-link">
-                        <i class="fab fa-github"></i>
-                        GitHub Profile
-                    </a>
-                    <a href="https://twitter.com/yourusername" class="contact-link">
-                        <i class="fab fa-twitter"></i>
-                        Twitter
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section id="publications" class="section content-section">
+      <div class="section-label">04 — Selected publications</div>
+      <div class="publication-list">
+        <article class="publication-item">
+          <div class="publication-year">2026</div>
+          <div>
+            <h3>Small research ecosystems in large international public policies</h3>
+            <p>Quantitative Science Studies · Journal article</p>
+            <a href="https://doi.org/10.1162/QSS.a.498" target="_blank" rel="noopener">DOI ↗</a>
+          </div>
+        </article>
+
+        <article class="publication-item">
+          <div class="publication-year">2025</div>
+          <div>
+            <h3>Assessing Open Science Policy Landscapes in the EU</h3>
+            <p>A socio-epistemological evaluation · Conference presentation</p>
+            <a href="https://doi.org/10.5281/zenodo.17663042" target="_blank" rel="noopener">DOI ↗</a>
+          </div>
+        </article>
+
+        <article class="publication-item">
+          <div class="publication-year">2024</div>
+          <div>
+            <h3>The role of CroRIS in promoting Open Science in Croatia</h3>
+            <p>Procedia Computer Science · Conference paper</p>
+            <a href="https://doi.org/10.1016/j.procs.2024.11.043" target="_blank" rel="noopener">DOI ↗</a>
+          </div>
+        </article>
+
+        <article class="publication-item">
+          <div class="publication-year">2022</div>
+          <div>
+            <h3>Using TikTok as a platform for science communication</h3>
+            <p>PUBMET · Journal article</p>
+            <a href="https://doi.org/10.15291/pubmet.3946" target="_blank" rel="noopener">DOI ↗</a>
+          </div>
+        </article>
+      </div>
+      <a class="text-link publication-more" href="https://orcid.org/0000-0002-0398-1858" target="_blank" rel="noopener">View complete record on ORCID ↗</a>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <p>Hosted on <a href="https://pages.github.com/">GitHub Pages</a></p>
-        </div>
+    <section id="projects" class="section content-section accent-section">
+      <div class="section-label">05 — Projects & data</div>
+      <div class="project-list">
+        <article class="project-item">
+          <div>
+            <p class="project-type">Research project · 2025–2029</p>
+            <h3>Interactive Learning: Digital Competences for Innovative Culture</h3>
+            <p>Grant number: IP-UNIN-DIH-2025-5</p>
+          </div>
+          <a href="https://il-dc4ic.eu/en/" target="_blank" rel="noopener">Project website ↗</a>
+        </article>
+
+        <article class="project-item">
+          <div>
+            <p class="project-type">Reproducible research · 2025</p>
+            <h3>Reproducibility Log: Overton Scientometric Dataset</h3>
+            <p>A documented workflow supporting transparent analysis of policy-mention data.</p>
+          </div>
+          <a href="https://doi.org/10.5281/zenodo.17912452" target="_blank" rel="noopener">Zenodo ↗</a>
+        </article>
+
+        <article class="project-item">
+          <div>
+            <p class="project-type">Dataset · 2026</p>
+            <h3>Open Science Monitoring Initiatives Dataset v01</h3>
+            <p>A dataset focused on initiatives for monitoring open science.</p>
+          </div>
+          <a href="https://doi.org/10.5281/zenodo.20918596" target="_blank" rel="noopener">Zenodo ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">Contact</p>
+      <h2>Interested in science–policy relations, policy citations or research impact?</h2>
+      <a class="contact-email" href="mailto:mhoic@irmo.hr">mhoic@irmo.hr</a>
+      <div class="contact-links">
+        <a href="https://orcid.org/0000-0002-0398-1858" target="_blank" rel="noopener">ORCID ↗</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=58690944800" target="_blank" rel="noopener">Scopus ↗</a>
+        <a href="https://irmo.hr/djelatnici/maja-hoic-2/" target="_blank" rel="noopener">IRMO ↗</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="current-year"></span> Maja Hoić</p>
+      <p>Hosted with GitHub Pages</p>
     </footer>
+  </main>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
