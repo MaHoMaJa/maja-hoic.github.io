@@ -118,6 +118,34 @@ img {
   transform: translateX(-10px);
 }
 
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 52px;
+  margin-top: 38px;
+  padding-top: 18px;
+  border-top: 1px solid var(--black);
+  max-width: 690px;
+}
+
+.hero-roles div {
+  min-width: 210px;
+}
+
+.hero-roles strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-roles p {
+  font-size: 0.78rem;
+}
+
+
 .kicker {
   font-size: 0.66rem;
   font-weight: 600;
@@ -174,19 +202,7 @@ img {
   line-height: 1.45;
   max-width: 95%;
 }
-.hero-meta {
-  display: grid;
-  gap: 20px;
-  font-size: 0.78rem;
-}
 
-.hero-meta strong {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
 
 /* =========================
    SHARED SECTIONS
@@ -623,17 +639,19 @@ img {
     font-size: clamp(4rem, 18vw, 7rem);
   }
 
-  .hero-side {
-    grid-column: 1;
-    display: grid;
-    grid-template-columns: 120px minmax(0, 1fr);
-    gap: 18px;
-    align-items: end;
-  }
+.hero-roles {
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 28px;
+}
 
-  .hero-image {
-    max-width: 120px;
-  }
+.hero-side {
+  display: block;
+}
+
+.hero-image {
+  max-width: 100%;
+}
 
   .hero-meta {
     grid-template-columns: 1fr;
