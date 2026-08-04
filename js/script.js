@@ -1,19 +1,15 @@
 const body = document.body;
 const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelectorAll('.side-nav a');
+const navLinks = document.querySelectorAll('.top-nav a');
 const sections = document.querySelectorAll('main section[id]');
 const year = document.getElementById('current-year');
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+if (year) year.textContent = new Date().getFullYear();
 
-if (menuToggle) {
-  menuToggle.addEventListener('click', () => {
-    const isOpen = body.classList.toggle('menu-open');
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-  });
-}
+menuToggle?.addEventListener('click', () => {
+  const isOpen = body.classList.toggle('menu-open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+});
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
@@ -24,12 +20,9 @@ navLinks.forEach((link) => {
 
 const setActiveLink = () => {
   let currentId = '';
-
   sections.forEach((section) => {
-    const top = section.getBoundingClientRect().top;
-    if (top <= 170) currentId = section.id;
+    if (section.getBoundingClientRect().top <= 120) currentId = section.id;
   });
-
   navLinks.forEach((link) => {
     link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
   });
