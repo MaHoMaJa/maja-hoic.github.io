@@ -27,7 +27,7 @@ const setActiveLink = () => {
 
   sections.forEach((section) => {
     const top = section.getBoundingClientRect().top;
-    if (top <= 180) currentId = section.id;
+    if (top <= 170) currentId = section.id;
   });
 
   navLinks.forEach((link) => {
