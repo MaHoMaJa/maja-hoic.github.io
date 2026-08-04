@@ -168,8 +168,9 @@ img {
 .hero-caption {
   margin-top: 10px;
   color: var(--grey);
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   line-height: 1.45;
+  max-width: 95%;
 }
 .hero-meta {
   display: grid;
