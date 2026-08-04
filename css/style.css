@@ -3,6 +3,7 @@
   --black: #0a0a0a;
   --grey: #777777;
   --light-grey: #eeeeee;
+  --soft-line: #cfcfcf;
   --serif: "Libre Caslon Display", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
 }
@@ -39,6 +40,7 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -50,11 +52,14 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
+
   min-height: 72px;
   padding: 0 28px;
+
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--black);
   backdrop-filter: blur(12px);
@@ -68,8 +73,8 @@ img {
 
 .top-nav {
   display: flex;
-  gap: 24px;
   align-items: center;
+  gap: 24px;
 }
 
 .top-nav a {
@@ -95,10 +100,12 @@ img {
 
 .hero {
   min-height: calc(100vh - 72px);
+  padding: 54px 28px 42px;
+
   display: grid;
   grid-template-columns: 55px minmax(0, 1fr) 320px;
   gap: 24px;
-  padding: 54px 28px 42px;
+
   border-bottom: 1px solid var(--black);
 }
 
@@ -118,34 +125,6 @@ img {
   transform: translateX(-10px);
 }
 
-.hero-roles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px 52px;
-  margin-top: 38px;
-  padding-top: 18px;
-  border-top: 1px solid var(--black);
-  max-width: 690px;
-}
-
-.hero-roles div {
-  min-width: 210px;
-}
-
-.hero-roles strong {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.hero-roles p {
-  font-size: 0.78rem;
-}
-
-
 .kicker {
   font-size: 0.66rem;
   font-weight: 600;
@@ -161,6 +140,7 @@ img {
 .hero h1 {
   max-width: 1000px;
   margin: 22px 0 30px;
+
   font-family: var(--serif);
   font-size: clamp(4.5rem, 10vw, 10rem);
   font-weight: 400;
@@ -170,14 +150,50 @@ img {
 
 .hero-deck {
   max-width: 690px;
+
   font-family: var(--serif);
   font-size: clamp(1.35rem, 2.3vw, 2.1rem);
   line-height: 1.22;
 }
 
+/* Professional roles below hero text */
+
+.hero-roles {
+  max-width: 690px;
+  margin-top: 28px;
+  padding-top: 16px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 40px;
+
+  border-top: 1px solid var(--soft-line);
+}
+
+.hero-roles div {
+  min-width: 210px;
+}
+
+.hero-roles strong {
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-roles p {
+  font-size: 0.78rem;
+}
+
+/* Photograph */
+
 .hero-side {
   align-self: center;
   justify-self: end;
+
   width: 100%;
   max-width: 285px;
 }
@@ -188,21 +204,23 @@ img {
 }
 
 .hero-image img {
-  display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
+
   object-fit: cover;
   object-position: center;
+
   filter: grayscale(100%) contrast(1.05);
 }
+
 .hero-caption {
+  max-width: 95%;
   margin-top: 10px;
+
   color: var(--grey);
   font-size: 0.66rem;
   line-height: 1.45;
-  max-width: 95%;
 }
-
 
 /* =========================
    SHARED SECTIONS
@@ -228,6 +246,7 @@ img {
 .publications-heading h2,
 .contact-section h2 {
   margin-top: 14px;
+
   font-family: var(--serif);
   font-size: clamp(2.6rem, 5vw, 5.5rem);
   font-weight: 400;
@@ -264,6 +283,7 @@ img {
   display: grid;
   grid-template-columns: 90px minmax(0, 1fr);
   gap: 35px;
+
   background: var(--black);
   color: var(--white);
 }
@@ -274,8 +294,10 @@ img {
 
 .doctoral-intro {
   grid-column: 2;
+
   max-width: 760px;
   margin-top: 20px;
+
   font-family: var(--serif);
   font-size: 1.45rem;
   line-height: 1.3;
@@ -283,9 +305,12 @@ img {
 
 .doctoral-grid {
   grid-column: 2;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   margin-top: 50px;
+
   border-top: 1px solid var(--white);
   border-left: 1px solid var(--white);
 }
@@ -293,6 +318,7 @@ img {
 .doctoral-grid article {
   min-height: 260px;
   padding: 24px;
+
   border-right: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
 }
@@ -304,6 +330,7 @@ img {
 
 .doctoral-grid h3 {
   margin: 48px 0 14px;
+
   font-family: var(--serif);
   font-size: 1.65rem;
   font-weight: 400;
@@ -317,6 +344,7 @@ img {
 
 .doctoral-facts {
   grid-column: 2;
+
   margin-top: 45px;
   border-top: 1px solid var(--white);
 }
@@ -325,6 +353,7 @@ img {
   display: grid;
   grid-template-columns: 180px 1fr;
   gap: 25px;
+
   padding: 13px 0;
   border-bottom: 1px solid #555555;
 }
@@ -354,6 +383,7 @@ img {
     minmax(200px, 0.75fr)
     minmax(280px, 1.25fr);
   gap: 28px;
+
   padding: 20px 0;
   border-bottom: 1px solid var(--black);
 }
@@ -380,6 +410,7 @@ img {
     minmax(240px, 0.8fr)
     minmax(320px, 1.2fr);
   gap: 35px;
+
   background: var(--light-grey);
 }
 
@@ -389,15 +420,19 @@ img {
 
 .activity-tags {
   grid-column: 2 / 4;
+
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+
   margin-top: 28px;
 }
 
 .activity-tags span {
   padding: 9px 12px;
+
   border: 1px solid var(--black);
+
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -419,6 +454,7 @@ img {
 
 .publication-list {
   grid-column: 2;
+
   margin-top: 35px;
   border-top: 1px solid var(--black);
 }
@@ -426,8 +462,9 @@ img {
 .publication-list article {
   display: grid;
   grid-template-columns: 80px minmax(0, 1fr) 70px;
-  gap: 24px;
   align-items: start;
+  gap: 24px;
+
   padding: 22px 0;
   border-bottom: 1px solid var(--black);
 }
@@ -466,15 +503,17 @@ img {
 .all-work {
   grid-column: 2;
   justify-self: start;
+
   margin-top: 25px;
 }
 
 /* =========================
-   CONTACT & FOOTER
+   CONTACT
    ========================= */
 
 .contact-section {
   padding: 85px 28px;
+
   background: var(--black);
   color: var(--white);
 }
@@ -485,8 +524,10 @@ img {
 
 .email-link {
   display: inline-block;
+
   margin-top: 38px;
   border-bottom: 1px solid var(--white);
+
   font-family: var(--serif);
   font-size: clamp(2rem, 5vw, 5rem);
 }
@@ -495,6 +536,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+
   margin-top: 45px;
 }
 
@@ -505,11 +547,18 @@ img {
   text-transform: uppercase;
 }
 
+/* =========================
+   FOOTER
+   ========================= */
+
 .site-footer {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+
   padding: 18px 28px;
   border-top: 1px solid var(--black);
+
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -526,22 +575,19 @@ img {
 
   .hero-copy {
     grid-column: 2;
+    transform: none;
   }
 
   .hero-side {
     grid-column: 2;
-    display: grid;
-    grid-template-columns: 200px minmax(0, 1fr);
-    gap: 28px;
-    align-items: end;
+    justify-self: start;
+
+    width: 100%;
+    max-width: none;
   }
 
   .hero-image {
-    max-width: 200px;
-  }
-
-  .hero-meta {
-    grid-template-columns: 1fr;
+    max-width: 260px;
   }
 
   .split-section,
@@ -589,12 +635,18 @@ img {
     padding: 0 18px;
   }
 
+  .wordmark {
+    font-size: 1.5rem;
+  }
+
   .menu-toggle {
     display: grid;
     width: 40px;
     height: 40px;
+
     gap: 6px;
     border: 0;
+
     background: transparent;
     place-content: center;
   }
@@ -608,10 +660,13 @@ img {
   .top-nav {
     position: fixed;
     inset: 62px 0 auto;
+
     display: none;
     flex-direction: column;
     align-items: flex-start;
+
     padding: 24px 18px;
+
     background: var(--white);
     border-bottom: 1px solid var(--black);
   }
@@ -622,9 +677,10 @@ img {
 
   .hero {
     min-height: auto;
-    grid-template-columns: 1fr;
-    gap: 28px;
     padding: 55px 18px 38px;
+
+    grid-template-columns: 1fr;
+    gap: 34px;
   }
 
   .hero-index {
@@ -639,23 +695,35 @@ img {
     font-size: clamp(4rem, 18vw, 7rem);
   }
 
-.hero-roles {
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 28px;
-}
+  .hero-deck {
+    font-size: clamp(1.25rem, 7vw, 1.75rem);
+  }
 
-.hero-side {
-  display: block;
-}
+  .hero-roles {
+    flex-direction: column;
+    gap: 16px;
 
-.hero-image {
-  max-width: 100%;
-}
+    margin-top: 28px;
+  }
 
-  .hero-meta {
-    grid-template-columns: 1fr;
-    gap: 14px;
+  .hero-roles div {
+    min-width: 0;
+  }
+
+  .hero-side {
+    grid-column: 1;
+    justify-self: start;
+
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-caption {
+    max-width: 100%;
   }
 
   .section,
@@ -716,9 +784,14 @@ img {
     gap: 4px;
   }
 
+  .email-link {
+    overflow-wrap: anywhere;
+  }
+
   .site-footer {
     flex-direction: column;
     gap: 7px;
+
     padding-inline: 18px;
   }
 }
