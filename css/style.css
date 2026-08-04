@@ -204,9 +204,11 @@ select {
   max-width: 690px;
   margin-top: 26px;
   padding-top: 15px;
+
   display: flex;
   flex-wrap: wrap;
   gap: 18px 38px;
+
   border-top: 1px solid var(--soft-line);
 }
 
@@ -216,7 +218,8 @@ select {
 
 .hero-roles strong {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -224,9 +227,9 @@ select {
 }
 
 .hero-roles p {
+  margin: 0;
   font-size: 0.78rem;
-    margin-top: 36px;
-
+  line-height: 1.4;
 }
 .hero-about {
   max-width: 760px;
