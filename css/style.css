@@ -316,8 +316,8 @@ img {
 }
 
 .doctoral-grid article {
-  min-height: 260px;
-  padding: 24px;
+  min-height: 210px;
+  padding: 16px 18px;
 
   border-right: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
@@ -325,14 +325,14 @@ img {
 
 .item-no {
   font-family: var(--serif);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .doctoral-grid h3 {
-  margin: 48px 0 14px;
+  margin: 28px 0 10px;
 
   font-family: var(--serif);
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.05;
 }
@@ -340,6 +340,7 @@ img {
 .doctoral-grid p {
   color: #d8d8d8;
   font-size: 0.83rem;
+   line-height: 1.5;
 }
 
 .doctoral-facts {
