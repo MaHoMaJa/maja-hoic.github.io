@@ -30,3 +30,27 @@ const setActiveLink = () => {
 
 window.addEventListener('scroll', setActiveLink, { passive: true });
 setActiveLink();
+const filterButtons = document.querySelectorAll('.filter-button');
+const workItems = document.querySelectorAll('.work-item');
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const selectedFilter = button.dataset.filter;
+
+    filterButtons.forEach((item) => {
+      item.classList.toggle('active', item === button);
+    });
+
+    workItems.forEach((workItem) => {
+      const categories = workItem.dataset.categories
+        .split(' ')
+        .filter(Boolean);
+
+      const shouldShow =
+        selectedFilter === 'all' ||
+        categories.includes(selectedFilter);
+
+      workItem.hidden = !shouldShow;
+    });
+  });
+});
