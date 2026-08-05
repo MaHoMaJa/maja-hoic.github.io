@@ -355,6 +355,25 @@ select {
   min-width: 0;
 }
 
+.timeline-image {
+  margin-top: 16px;
+}
+
+.timeline-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  filter: grayscale(100%);
+}
+
+.timeline-image figcaption {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.62rem;
+  line-height: 1.4;
+}
+
 /* Doctoral cards */
 
 .doctoral-grid {
