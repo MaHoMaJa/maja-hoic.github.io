@@ -386,7 +386,9 @@ select {
   border-left: 1px solid var(--white);
 }
 
-.doctoral-grid article {
+.doctoral-grid article:nth-child(5) {
+  grid-column: span 2;
+}.doctoral-grid article {
   min-height: 195px;
   padding: 14px 16px;
 
