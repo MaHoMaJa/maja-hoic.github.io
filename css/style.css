@@ -273,7 +273,7 @@ select {
   object-fit: cover;
   object-position: center;
 
-  filter: grayscale(50%) contrast(1.05);
+  filter: grayscale(20%) contrast(1.05);
 }
 
 .hero-caption {
