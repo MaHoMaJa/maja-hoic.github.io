@@ -344,7 +344,7 @@ select {
   grid-column: 2;
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 270px;
+  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 38px;
   align-items: start;
 
