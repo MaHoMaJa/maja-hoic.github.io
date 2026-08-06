@@ -538,6 +538,22 @@ select {
   max-width: 900px;
 }
 
+/* Shared label for both filter rows */
+
+.filter-group-label {
+  flex: 0 0 100%;
+
+  margin-bottom: 4px;
+
+  color: var(--grey);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Theme filter */
+
 .research-filters {
   grid-column: 2;
 
@@ -546,9 +562,7 @@ select {
   gap: 8px;
 
   margin-top: 24px;
-  padding-bottom: 24px;
-
-  border-bottom: 1px solid var(--black);
+  padding-bottom: 16px;
 }
 
 .filter-button {
@@ -565,6 +579,10 @@ select {
   text-transform: uppercase;
 
   cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
 }
 
 .filter-button:hover,
@@ -572,6 +590,57 @@ select {
   background: var(--black);
   color: var(--white);
 }
+
+/* Output-type filter */
+
+.output-filters {
+  grid-column: 2;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  padding: 16px 0 24px;
+  border-top: 1px solid var(--soft-line);
+  border-bottom: 1px solid var(--black);
+}
+
+.type-filter-button {
+  padding: 7px 10px;
+
+  border: 1px solid var(--soft-line);
+  background: var(--white);
+  color: var(--grey);
+
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.type-filter-button:hover,
+.type-filter-button.active {
+  border-color: var(--black);
+  background: var(--black);
+  color: var(--white);
+}
+
+/* Keyboard accessibility */
+
+.filter-button:focus-visible,
+.type-filter-button:focus-visible {
+  outline: 2px solid var(--black);
+  outline-offset: 3px;
+}
+
+/* Results */
 
 .filtered-work {
   grid-column: 2;
@@ -633,6 +702,19 @@ select {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-transform: uppercase;
+}
+
+.filter-empty-message {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--black);
+
+  color: var(--grey);
+  font-family: var(--serif);
+  font-size: 1.25rem;
+}
+
+.filter-empty-message[hidden] {
+  display: none;
 }
 
 /* =========================
